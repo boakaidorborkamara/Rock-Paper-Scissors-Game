@@ -1,3 +1,86 @@
 options = ["R", "P", "S"]
 
-print( options)
+# prompt user for to select an option 
+user_option =  input('Select an option from the list: R,P,S\n')
+print(user_option)
+
+
+# validate user option 
+while user_option not in options:
+    user_option =  input('Please select a valid option: R,P,S\n')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
