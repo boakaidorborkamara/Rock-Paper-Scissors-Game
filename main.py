@@ -1,6 +1,9 @@
 import random
 
+# valid options 
 options = ["R", "P", "S"]
+
+# contains game logic 
 def startGame():
     # prompt user for to select an option 
     user_selection =  input('Select an option from the list: R,P,S\n')
@@ -36,31 +39,31 @@ def startGame():
     elif computer_selection == "P":
             print("CPU (Paper)")
     elif computer_selection == "S":
-        print("CPU (Scsissors)")
+        print("CPU (Scissors)")
 
 
 
     # check if game is tie 
     if user_selection == computer_selection:
         print("Tie")
+        print("Play Again")
         startGame() # restart the game after game is tie 
     elif user_selection != computer_selection:
         #find and announce winner the winner after the is not tie
         if user_selection == "R" and computer_selection == "S":
-            print("Human Wins")
+            print("Player Wins")
         elif user_selection == "S" and computer_selection == "R":
-            print("Computer wins")
+            print("CPU wins")
         elif user_selection == "P" and computer_selection == "S":
-            print("Computer wins")
+            print("CPU wins")
         elif user_selection == "S" and computer_selection == "P":
-            print("Computer wins")
+            print("Player wins")
         elif user_selection == "P" and computer_selection == "R":
-            print("Computer wins")
+            print("Player wins")
         elif user_selection == "R" and computer_selection == "P":
-            print("Computer wins")
+            print("CPU wins")
         elif user_selection == computer_selection:
             print("game tie")
-
 
 
 # invoke the fnx 
